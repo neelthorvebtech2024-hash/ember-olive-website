@@ -1,3 +1,4 @@
+js/script.js
 // Reservation Confirmation
 document.getElementById("reservationForm")?.addEventListener("submit", function(e) {
   e.preventDefault();
@@ -23,3 +24,4 @@ function addToCart(item, price) {
   total += price;
   document.getElementById("totalPrice").textContent = total;
 }
+
