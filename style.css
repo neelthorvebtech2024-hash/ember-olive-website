@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #fffdf7;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #3a1f04;
+  color: #f4ede0;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Ephesis', cursive;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+nav a {
+  color: #f4ede0;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 600;
+}
+
+nav a:hover, nav a.active {
+  color: #ffcf70;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-text h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+section {
+  padding: 40px 10%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3a1f04;
+}
+
+/* Full Menu Section */
+.nav-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav-buttons button {
+  margin: 5px;
+  background: #3a1f04;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background: #5e3511;
+}
+
+.card {
+  background: #fff8f1;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.card button {
+  background: #3a1f04;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.card button:hover {
+  background: #5e3511;
+}
+
+.cart {
+  background: #fef4e4;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  background: #3a1f04;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, button {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #3a1f04;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #5e3511;
+}
