@@ -3,113 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ember & Olive - Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
+  <title>Menu | Ember & Olive</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Ember & Olive</h1>
+    <h1>Our Menu</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="reservation.html">Reservation</a>
-      <a href="menu.html" class="active">Menu</a>
+      <a href="menu.html">Menu</a>
+      <a href="reservation.html">Reservations</a>
       <a href="location.html">Location</a>
     </nav>
   </header>
 
-  <section id="fullmenu">
-    <h2>🍽️ Full Menu</h2>
+  <section class="menu-section">
+    <h2>Appetizers</h2>
+    <ul>
+      <li>Bruschetta</li>
+      <li>Stuffed Mushrooms</li>
+      <li>Garlic Bread</li>
+      <li>Caprese Salad</li>
+      <li>Onion Rings</li>
+      <li>Spring Rolls</li>
+      <li>Nachos</li>
+      <li>Mini Tacos</li>
+      <li>Soup of the Day</li>
+      <li>Cheese Platter</li>
+    </ul>
 
-    <div class="nav-buttons">
-      <button onclick="showCategory('starters')">Starters</button>
-      <button onclick="showCategory('main')">Main Course</button>
-      <button onclick="showCategory('desserts')">Desserts</button>
-      <button onclick="showCategory('drinks')">Drinks</button>
-    </div>
+    <h2>Main Course</h2>
+    <ul>
+      <li>Grilled Salmon</li>
+      <li>Chicken Alfredo</li>
+      <li>Beef Steak</li>
+      <li>Veg Lasagna</li>
+      <li>Paneer Butter Masala</li>
+      <li>Margherita Pizza</li>
+      <li>Thai Green Curry</li>
+      <li>BBQ Ribs</li>
+      <li>Biryani</li>
+      <li>Pasta Arrabiata</li>
+    </ul>
 
-    <div id="menu-categories">
-      <!-- Starters -->
-      <div class="category" id="starters">
-        <div class="card">
-          <h3>Champagne Mushroom Fricassee</h3>
-          <p>Wild mushrooms sautéed in champagne vinegar with Parmesan, wrapped in filo</p>
-          <span>₹450</span>
-          <button onclick="addToCart('Champagne Mushroom Fricassee',450)">Add</button>
-        </div>
-        <div class="card">
-          <h3>Sanpei Cottage Cheese</h3>
-          <p>Dark soy flavored cottage cheese, chilli oyster sauce</p>
-          <span>₹450</span>
-          <button onclick="addToCart('Sanpei Cottage Cheese',450)">Add</button>
-        </div>
-        <div class="card">
-          <h3>Spicy Chicken Wings</h3>
-          <p>Crispy wings tossed in house spicy sauce</p>
-          <span>₹300</span>
-          <button onclick="addToCart('Spicy Chicken Wings',300)">Add</button>
-        </div>
-      </div>
+    <h2>Desserts</h2>
+    <ul>
+      <li>Chocolate Lava Cake</li>
+      <li>Cheesecake</li>
+      <li>Tiramisu</li>
+      <li>Brownie with Ice Cream</li>
+      <li>Fruit Tart</li>
+      <li>Gulab Jamun</li>
+      <li>Panna Cotta</li>
+      <li>Banoffee Pie</li>
+      <li>Macarons</li>
+      <li>Crème Brûlée</li>
+    </ul>
 
-      <!-- Main Course -->
-      <div class="category" id="main" style="display:none;">
-        <div class="card">
-          <h3>Wild Mushroom Risotto</h3>
-          <p>Porcini, button mushroom, ricotta cheese, truffle oil</p>
-          <span>₹600</span>
-          <button onclick="addToCart('Wild Mushroom Risotto',600)">Add</button>
-        </div>
-        <div class="card">
-          <h3>Pepper Corn Tenderloin Steak</h3>
-          <p>Balsamic reduction, broccoli, garlic potato mash</p>
-          <span>₹700</span>
-          <button onclick="addToCart('Pepper Corn Tenderloin Steak',700)">Add</button>
-        </div>
-      </div>
-
-      <!-- Desserts -->
-      <div class="category" id="desserts" style="display:none;">
-        <div class="card">
-          <h3>Flourless Dark Chocolate Mud Cake</h3>
-          <p>Rich chocolate mud cake with vanilla ice cream</p>
-          <span>₹400</span>
-          <button onclick="addToCart('Mud Cake',400)">Add</button>
-        </div>
-        <div class="card">
-          <h3>Pomegranate Panna Cotta</h3>
-          <p>Silky Italian dessert with pomegranate reduction</p>
-          <span>₹350</span>
-          <button onclick="addToCart('Pomegranate Panna Cotta',350)">Add</button>
-        </div>
-      </div>
-
-      <!-- Drinks -->
-      <div class="category" id="drinks" style="display:none;">
-        <div class="card">
-          <h3>Classic Mojito</h3>
-          <p>Fresh mint, lime, and soda</p>
-          <span>₹250</span>
-          <button onclick="addToCart('Classic Mojito',250)">Add</button>
-        </div>
-        <div class="card">
-          <h3>Cold Brew Coffee</h3>
-          <p>Slow-brewed coffee served over ice</p>
-          <span>₹200</span>
-          <button onclick="addToCart('Cold Brew Coffee',200)">Add</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="cart">
-      <h3>🛒 Your Cart</h3>
-      <ul id="cartList"></ul>
-      <p><strong>Total: ₹<span id="totalPrice">0</span></strong></p>
-    </div>
+    <h2>Beverages</h2>
+    <ul>
+      <li>Lemon Iced Tea</li>
+      <li>Espresso</li>
+      <li>Cappuccino</li>
+      <li>Fresh Lime Soda</li>
+      <li>Mojito</li>
+      <li>Orange Juice</li>
+      <li>Mocktail</li>
+      <li>Cold Coffee</li>
+      <li>Hot Chocolate</li>
+      <li>Green Tea</li>
+    </ul>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Ember & Olive. All rights reserved.</p>
-  </footer>
+  <footer>© 2025 Ember & Olive. All Rights Reserved.</footer>
 </body>
 </html>
