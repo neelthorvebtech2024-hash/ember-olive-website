@@ -6,6 +6,7 @@
   <title>Ember & Olive - Menu</title>
   <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
@@ -76,4 +77,39 @@
           <button onclick="addToCart('Mud Cake',400)">Add</button>
         </div>
         <div class="card">
-          <h3>Pomegranate Panna Cotta
+          <h3>Pomegranate Panna Cotta</h3>
+          <p>Silky Italian dessert with pomegranate reduction</p>
+          <span>₹350</span>
+          <button onclick="addToCart('Pomegranate Panna Cotta',350)">Add</button>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="category" id="drinks" style="display:none;">
+        <div class="card">
+          <h3>Classic Mojito</h3>
+          <p>Fresh mint, lime, and soda</p>
+          <span>₹250</span>
+          <button onclick="addToCart('Classic Mojito',250)">Add</button>
+        </div>
+        <div class="card">
+          <h3>Cold Brew Coffee</h3>
+          <p>Slow-brewed coffee served over ice</p>
+          <span>₹200</span>
+          <button onclick="addToCart('Cold Brew Coffee',200)">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h3>🛒 Your Cart</h3>
+      <ul id="cartList"></ul>
+      <p><strong>Total: ₹<span id="totalPrice">0</span></strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ember & Olive. All rights reserved.</p>
+  </footer>
+</body>
+</html>
