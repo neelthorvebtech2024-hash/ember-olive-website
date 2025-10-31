@@ -3,78 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu | Ember & Olive</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Ember & Olive - Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <h1>Our Menu</h1>
+    <h1>Ember & Olive</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="reservation.html">Reservations</a>
+      <a href="reservation.html">Reservation</a>
+      <a href="menu.html" class="active">Menu</a>
       <a href="location.html">Location</a>
     </nav>
   </header>
 
-  <section class="menu-section">
-    <h2>Appetizers</h2>
-    <ul>
-      <li>Bruschetta</li>
-      <li>Stuffed Mushrooms</li>
-      <li>Garlic Bread</li>
-      <li>Caprese Salad</li>
-      <li>Onion Rings</li>
-      <li>Spring Rolls</li>
-      <li>Nachos</li>
-      <li>Mini Tacos</li>
-      <li>Soup of the Day</li>
-      <li>Cheese Platter</li>
-    </ul>
+  <section id="fullmenu">
+    <h2>🍽️ Full Menu</h2>
 
-    <h2>Main Course</h2>
-    <ul>
-      <li>Grilled Salmon</li>
-      <li>Chicken Alfredo</li>
-      <li>Beef Steak</li>
-      <li>Veg Lasagna</li>
-      <li>Paneer Butter Masala</li>
-      <li>Margherita Pizza</li>
-      <li>Thai Green Curry</li>
-      <li>BBQ Ribs</li>
-      <li>Biryani</li>
-      <li>Pasta Arrabiata</li>
-    </ul>
+    <div class="nav-buttons">
+      <button>Starters</button>
+      <button>Main Course</button>
+      <button>Desserts</button>
+      <button>Drinks</button>
+    </div>
 
-    <h2>Desserts</h2>
-    <ul>
-      <li>Chocolate Lava Cake</li>
-      <li>Cheesecake</li>
-      <li>Tiramisu</li>
-      <li>Brownie with Ice Cream</li>
-      <li>Fruit Tart</li>
-      <li>Gulab Jamun</li>
-      <li>Panna Cotta</li>
-      <li>Banoffee Pie</li>
-      <li>Macarons</li>
-      <li>Crème Brûlée</li>
-    </ul>
+    <div id="menu-categories">
 
-    <h2>Beverages</h2>
-    <ul>
-      <li>Lemon Iced Tea</li>
-      <li>Espresso</li>
-      <li>Cappuccino</li>
-      <li>Fresh Lime Soda</li>
-      <li>Mojito</li>
-      <li>Orange Juice</li>
-      <li>Mocktail</li>
-      <li>Cold Coffee</li>
-      <li>Hot Chocolate</li>
-      <li>Green Tea</li>
-    </ul>
+      <!-- Starters -->
+      <h3>🥗 Starters</h3>
+      <div class="category">
+        <div class="card">
+          <h4>Champagne Mushroom Fricassee</h4>
+          <p>Wild mushrooms sautéed in champagne vinegar with Parmesan, wrapped in filo</p>
+          <span>₹450</span>
+        </div>
+        <div class="card">
+          <h4>Sanpei Cottage Cheese</h4>
+          <p>Dark soy flavored cottage cheese with chili oyster sauce</p>
+          <span>₹450</span>
+        </div>
+        <div class="card">
+          <h4>Spicy Chicken Wings</h4>
+          <p>Crispy wings tossed in our signature spicy sauce</p>
+          <span>₹300</span>
+        </div>
+        <div class="card">
+          <h4>Garlic Bread with Cheese</h4>
+          <p>Toasted baguette topped with melted mozzarella</p>
+          <span>₹250</span>
+        </div>
+        <div class="card">
+          <h4>Bruschetta</h4>
+          <p>Toasted bread with tomatoes, basil, and olive oil</p>
+          <span>₹220</span>
+        </div>
+      </div>
+
+      <!-- Main Course -->
+      <h3>🍝 Main Course</h3>
+      <div class="category">
+        <div class="card">
+          <h4>Wild Mushroom Risotto</h4>
+          <p>Porcini and button mushrooms with truffle oil and ricotta</p>
+          <span>₹600</span>
+        </div>
+        <div class="card">
+          <h4>Pepper Corn Tenderloin Steak</h4>
+          <p>Grilled steak with balsamic reduction, broccoli, and garlic potato mash</p>
+          <span>₹700</span>
+        </div>
+        <div class="card">
+          <h4>Grilled Salmon</h4>
+          <p>Served with lemon butter sauce and roasted vegetables</p>
+          <span>₹850</span>
+        </div>
+        <div class="card">
+          <h4>Veg Alfredo Pasta</h4>
+          <p>Creamy white sauce pasta with veggies</p>
+          <span>₹500</span>
+        </div>
+        <div class="card">
+          <h4>Paneer Butter Masala</h4>
+          <p>Soft cottage cheese in rich tomato gravy with cream</p>
+          <span>₹480</span>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <h3>🍰 Desserts</h3>
+      <div class="category">
+        <div class="card">
+          <h4>Flourless Dark Chocolate Mud Cake</h4>
+          <p>Rich chocolate cake served with vanilla ice cream</p>
+          <span>₹400</span>
+        </div>
+        <div class="card">
+          <h4>Pomegranate Panna Cotta</h4>
+          <p>Silky Italian dessert with pomegranate reduction</p>
+          <span>₹350</span>
+        </div>
+        <div class="card">
+          <h4>Classic Tiramisu</h4>
+          <p>Coffee-flavored Italian dessert layered with mascarpone cream</p>
+          <span>₹420</span>
+        </div>
+        <div class="card">
+          <h4>Blueberry Cheesecake</h4>
+          <p>Creamy cheesecake topped with blueberry compote</p>
+          <span>₹380</span>
+        </div>
+        <div class="card">
+          <h4>Brownie with Ice Cream</h4>
+          <p>Chocolate brownie served warm with vanilla ice cream</p>
+          <span>₹300</span>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <h3>🥤 Drinks</h3>
+      <div class="category">
+        <div class="card">
+          <h4>Classic Mojito</h4>
+          <p>Fresh mint, lime, and soda</p>
+          <span>₹250</span>
+        </div>
+        <div class="card">
+          <h4>Cold Brew Coffee</h4>
+          <p>Slow-brewed coffee served over ice</p>
+          <span>₹200</span>
+        </div>
+        <div class="card">
+          <h4>Fresh Lemonade</h4>
+          <p>Refreshing lemon drink with mint</p>
+          <span>₹150</span>
+        </div>
+        <div class="card">
+          <h4>Iced Caramel Latte</h4>
+          <p>Chilled espresso with caramel and milk</p>
+          <span>₹220</span>
+        </div>
+        <div class="card">
+          <h4>Hot Chocolate</h4>
+          <p>Creamy cocoa drink with whipped cream</p>
+          <span>₹180</span>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <footer>© 2025 Ember & Olive. All Rights Reserved.</footer>
+  <footer>
+    <p>&copy; 2025 Ember & Olive. All rights reserved.</p>
+  </footer>
 </body>
 </html>
